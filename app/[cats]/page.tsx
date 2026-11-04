@@ -8,7 +8,7 @@ export default function Cats(){
     const params = useParams();
 
     // fetch cat api data with SWR
-    const {data, error} = useSWR(`https://api.thecatapi.com/v1/images/${params.id}`,
+    const {data, error} = useSWR(`https://api.thecatapi.com/v1/images/search?&api_key=${params.id}`,
         (url) =>
             fetch(url).then((res) => res.json())
     );
@@ -21,7 +21,7 @@ export default function Cats(){
     if(!data) return <div>Loading Cats...</div>
 
     // if there is data
-    const cats = cats?.id || [];
+    // const cats = cats?.id || [];
 
     return(
         <>
