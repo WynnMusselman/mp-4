@@ -5,6 +5,7 @@ import useSWR from "swr";
 import { Cat } from "@/app/interfaces/cat";
 import styled from "styled-components";
 import GlobalStyles from "@/app/components/GlobalStyles";
+import Link from "next/link";
 
 const Wrapper = styled.div`
     text-align: center;
@@ -14,7 +15,7 @@ const Wrapper = styled.div`
 
 const MainStyled = styled.main`
     //width: 80%;
-    min-height: 100vh;
+    min-height: 150vh;
 `
 
 const CatImg = styled.img`
@@ -29,7 +30,38 @@ const HeadingStyled = styled.h1`
 
 const PStyle = styled.p`
     font: italic calc(2px + 1vw) "Lucida Handwriting", Apple Chancery, cursive;
-    padding: 2%
+    padding: 2%;
+    margin: 2%;
+`
+
+const HomeButton = styled(Link)`
+    background-color: #F5D491;
+    border: 3px solid #61A0AF;
+    color: #F06C9B;
+    text-decoration: none;
+    padding: 1.2%;
+    margin: 2%;
+
+    font: calc(2px + 1.5vw) cursive;
+    
+    &:hover {
+        font-style: italic;
+    }
+`
+
+const NewCat = styled(Link)`
+    background-color: #F9B9B7;
+    border: 3px solid #F5D491;
+    color: #61A0AF;
+    text-decoration: none;
+    padding: 1.2%;
+    margin: 2%;
+
+    font: calc(2px + 1.5vw) cursive;
+    
+    &:hover {
+        font-style: italic;
+    }
 `
 
 export default function RandomCat(){
@@ -57,6 +89,9 @@ export default function RandomCat(){
                 <HeadingStyled>Your random cat...</HeadingStyled>
                 <CatImg src = {cat_id.url} alt = "a random cat"/>
                 <PStyle>this image was posted online at: {cat_id.created_at}</PStyle>
+
+                <HomeButton href="/">Go Back Home</HomeButton>
+                <NewCat href = "/cats">Get New Cat</NewCat>
             </MainStyled>
         </Wrapper>
     )

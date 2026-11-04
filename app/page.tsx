@@ -7,7 +7,7 @@ import styled from 'styled-components';
 import GlobalStyles from "@/app/components/GlobalStyles";
 
 const Wrapper = styled.div`
-    background-color: #F9B9B7;
+    background-color: #F06C9B;
     text-align: center;
     margin: auto;
 `
@@ -19,12 +19,12 @@ const MainStyle = styled.main`
 const HeadingStyle = styled.h1`
     font: bold calc(2px + 5vw) "Comic Sans MS", Papyrus, cursive;
     padding: 3%;
-    color: #61A0AF;
+    color: #96C9DC;
 `
 
 const ImgStyle = styled.img`
     max-width: 30vw;
-    border: 4px dashed #61A0AF; 
+    border: 6px dashed #96C9DC; 
     border-radius: 50%;
 `
 
@@ -34,7 +34,7 @@ const LinkStyle = styled(Link)`
     color: #bf3969;
     display: block;
     text-decoration: none;
-    border: 2px dotted #96C9DC;
+    border: 6px dashed #96C9DC;
     text-align: center;
     margin: 2% auto;
     background-color: #F5D491;
@@ -43,6 +43,9 @@ const LinkStyle = styled(Link)`
 
     &:hover {
         font-style: italic;
+        border-style: dotted;
+        border-color: #61A0AF;
+        background-color: #f3ca79;
     }
 `
 
