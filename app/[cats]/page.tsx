@@ -49,20 +49,20 @@ const HomeButton = styled(Link)`
     }
 `
 
-const NewCat = styled(Link)`
-    background-color: #F9B9B7;
-    border: 3px solid #F5D491;
-    color: #61A0AF;
-    text-decoration: none;
-    padding: 1.2%;
-    margin: 2%;
-
-    font: calc(2px + 1.5vw) cursive;
-    
-    &:hover {
-        font-style: italic;
-    }
-`
+// const NewCat = styled(Link)`
+//     background-color: #F9B9B7;
+//     border: 3px solid #F5D491;
+//     color: #61A0AF;
+//     text-decoration: none;
+//     padding: 1.2%;
+//     margin: 2%;
+//
+//     font: calc(2px + 1.5vw) cursive;
+//
+//     &:hover {
+//         font-style: italic;
+//     }
+// `
 
 export default function RandomCat(){
 
@@ -91,7 +91,7 @@ export default function RandomCat(){
                 <PStyle>this image was posted online at: {cat_id.created_at}</PStyle>
 
                 <HomeButton href="/">Go Back Home</HomeButton>
-                <NewCat href = "/cats">Get New Cat</NewCat>
+                {/*<NewCat href = "/cats">Get New Cat</NewCat>*/}
             </MainStyled>
         </Wrapper>
     )
