@@ -1,3 +1,5 @@
+// returns the data from the API
+
 import {NextRequest, NextResponse} from "next/server";
 
 export const dynamic = "force-dynamic";

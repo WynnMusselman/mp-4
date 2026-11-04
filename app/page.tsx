@@ -12,9 +12,7 @@ export default function Home(){
     return (
         <>
             <h1>Welcome to the cat site</h1>
-            <h2>Enter a breed name to get a list of images from cats of that breed</h2>
-            <input type = "text" value = {cat} placeholder = {"Enter Cat Breed"} onChange = {(e) => setCat(e.target.value)}/>
-            <Link href = {`${cat}`}>Get Cat</Link>
+            <Link href = "\cats">Get Random Cat</Link>
         </>
     );
 }

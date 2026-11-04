@@ -7,7 +7,7 @@ const links = [
         //icon: insertIconHere
     },
     {
-        name: "Cats",
+        name: "RandomCat",
         href: "dashboard/cats",
         //icon: insertIcon
     }
