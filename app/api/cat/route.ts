@@ -2,7 +2,7 @@
 
 import {NextRequest, NextResponse} from "next/server";
 
-export const dynamic = "force-dynamic";
+// export const dynamic = "force-dynamic";
 
 // the API key from TheCatAPI
 const CAT_API_KEY = process.env.CAT_API_KEY;
