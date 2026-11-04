@@ -27,6 +27,11 @@ const HeadingStyled = styled.h1`
     padding: 3%;
 `
 
+const PStyle = styled.p`
+    font: italic calc(2px + 1vw) "Lucida Handwriting", Apple Chancery, cursive;
+    padding: 2%
+`
+
 export default function RandomCat(){
 
     // const params = useParams();
@@ -51,6 +56,7 @@ export default function RandomCat(){
             <MainStyled>
                 <HeadingStyled>Your random cat...</HeadingStyled>
                 <CatImg src = {cat_id.url} alt = "a random cat"/>
+                <PStyle>this image was posted online at: {cat_id.created_at}</PStyle>
             </MainStyled>
         </Wrapper>
     )
